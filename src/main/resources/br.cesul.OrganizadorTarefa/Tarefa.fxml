@@ -15,7 +15,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cesul.OrganizadorTarefa.view.TarefaView">
    <children>
-      <BorderPane prefHeight="400.0" prefWidth="600.0">
+      <BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2193b0;">
          <top>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER_LEFT">
                <children>
@@ -68,13 +68,13 @@
             </HBox>
          </top>
          <center>
-            <TableView fx:id="tableView" prefHeight="254.0" prefWidth="600.0" style="-fx-alignment: CENTER;" BorderPane.alignment="CENTER">
+            <TableView fx:id="tableView" prefHeight="254.0" prefWidth="600.0" style="-fx-alignment: CENTER; -fx-background-color: #6dd5ed;;" BorderPane.alignment="CENTER">
               <columns>
-                <TableColumn fx:id="nameCol" prefWidth="75.0" text="Pessoa" />
-                <TableColumn fx:id="tarefaCol" prefWidth="75.0" text="Tarefa" />
-                  <TableColumn fx:id="dateCol" prefWidth="75.0" text="Data" />
-                  <TableColumn fx:id="prioridadeCol" prefWidth="75.0" text="Prioridade" />
-                  <TableColumn fx:id="statusCol" prefWidth="75.0" text="Status" />
+                <TableColumn fx:id="nameCol" prefWidth="75.0" text="Pessoa 👤" />
+                <TableColumn fx:id="tarefaCol" prefWidth="75.0" text="Tarefa 💻" />
+                  <TableColumn fx:id="dateCol" prefWidth="75.0" text="Data 📆" />
+                  <TableColumn fx:id="prioridadeCol" prefWidth="75.0" text="Prioridade ⚠" />
+                  <TableColumn fx:id="statusCol" prefWidth="75.0" text="Status 🌐" />
               </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -82,7 +82,7 @@
             </TableView>
          </center>
          <bottom>
-            <HBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <HBox prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #6dd5ed, #2193b0);;" BorderPane.alignment="CENTER">
                <children>
                   <HBox prefHeight="100.0" prefWidth="200.0">
                      <children>
