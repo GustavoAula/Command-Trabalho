@@ -10,8 +10,30 @@ public class Tarefa {
     private String nome;
     private String tarefa;
     private LocalDate date;
-    private ComboBox<String> prioridade;
-    private ComboBox<String> status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public String getPrioridade() {
+        return prioridade;
+    }
+
+    public void setPrioridade(String prioridade) {
+        this.prioridade = prioridade;
+    }
+
+    private String prioridade;
+    private String status;
+
 
     public ObjectId getId() {
         return id;
@@ -21,21 +43,6 @@ public class Tarefa {
         this.id = id;
     }
 
-    public ComboBox<String> getStatus() {
-        return status;
-    }
-
-    public void setStatus(ComboBox<String> status) {
-        this.status = status;
-    }
-
-    public ComboBox<String> getPrioridade() {
-        return prioridade;
-    }
-
-    public void setPrioridade(ComboBox<String> prioridade) {
-        this.prioridade = prioridade;
-    }
 
     public LocalDate getDate() {
         return date;
@@ -58,7 +65,7 @@ public class Tarefa {
         this.nome = nome;
     }
 
-    public Tarefa(String nome, String tarefa, LocalDate date, ComboBox prioridade, ComboBox status){
+    public Tarefa(String nome, String tarefa, LocalDate date, String prioridade, String status){
         this.nome = nome;
         this.tarefa = tarefa;
         this.date = date;

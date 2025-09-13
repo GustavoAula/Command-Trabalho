@@ -10,7 +10,7 @@ import static com.mongodb.client.model.Filters.eq;
 import static com.mongodb.client.model.Sorts.ascending;
 import static com.mongodb.client.model.Sorts.descending;
 
-public class TarefaReository {
+public class TarefaRepository {
     private final MongoCollection<Tarefa> col =
             MongoConfig.db.getCollection("tarefas", Tarefa.class);
 
@@ -21,15 +21,15 @@ public class TarefaReository {
         return list;
     }
 
-    public void insert(Tarefa c){
-        col.insertOne(c);
+    public void insert(Tarefa t){
+        col.insertOne(t);
     }
 
-    public void delete(Tarefa c){
-        col.deleteOne(eq("_id", c.getId()));
+    public void delete(Tarefa t){
+        col.deleteOne(eq("_id", t.getId()));
     }
 
-    public void update(Tarefa c) {
-        col.replaceOne(eq("_id", c.getId()), c);
+    public void update(Tarefa t) {
+        col.replaceOne(eq("_id", t.getId()), t);
     }
 }
